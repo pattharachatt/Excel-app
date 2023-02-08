@@ -19,6 +19,12 @@ class CreateArtistsTable extends Migration
             $table->string('name_th')->nullable(true);
             $table->timestamp('date_of_birth')->nullable(true);
             $table->string('place_of_birth')->nullable(true);
+            $table->string('address')->nullable(true);
+            $table->string('tel_number')->nullable(true);
+            $table->string('about_the_artist')->nullable(true);
+            $table->string('master_work_1')->nullable(true);
+            $table->string('master_work_2')->nullable(true);
+            $table->string('master_work_3')->nullable(true);
             $table->timestamp('created_at');
             $table->timestamp('updated_at')->nullable(true);
             $table->softDeletes();

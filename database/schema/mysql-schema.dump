@@ -13,6 +13,12 @@ CREATE TABLE `artists` (
   `name_th` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `date_of_birth` timestamp NULL DEFAULT NULL,
   `place_of_birth` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tel_number` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `about_the_artist` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `master_work_1` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `master_work_2` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `master_work_3` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NOT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL,
@@ -180,8 +186,8 @@ INSERT INTO `migrations` VALUES (1,'2014_10_12_000000_create_users_table',1);
 INSERT INTO `migrations` VALUES (2,'2014_10_12_100000_create_password_resets_table',1);
 INSERT INTO `migrations` VALUES (3,'2019_08_19_000000_create_failed_jobs_table',1);
 INSERT INTO `migrations` VALUES (4,'2019_12_14_000001_create_personal_access_tokens_table',1);
-INSERT INTO `migrations` VALUES (5,'2023_02_08_142209_create_artists_table',2);
-INSERT INTO `migrations` VALUES (6,'2023_02_08_143604_create_inventories_table',3);
-INSERT INTO `migrations` VALUES (7,'2023_02_08_143610_create_products_table',3);
-INSERT INTO `migrations` VALUES (8,'2023_02_08_143619_create_stocks_table',3);
-INSERT INTO `migrations` VALUES (9,'2023_02_08_145609_create_artworks_table',3);
+INSERT INTO `migrations` VALUES (5,'2023_02_08_143604_create_inventories_table',1);
+INSERT INTO `migrations` VALUES (6,'2023_02_08_143610_create_products_table',1);
+INSERT INTO `migrations` VALUES (7,'2023_02_08_143619_create_stocks_table',1);
+INSERT INTO `migrations` VALUES (8,'2023_02_08_163814_create_artists_table',1);
+INSERT INTO `migrations` VALUES (9,'2023_02_08_164536_create_artworks_table',1);
